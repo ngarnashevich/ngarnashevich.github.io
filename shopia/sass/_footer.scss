@@ -1,0 +1,11 @@
+.footer{
+    height: 68px;
+    padding: 26px 0;
+    background-color: #ccc;
+    text-align: center;
+    &-copy{
+        font-family: $ff-bold;
+        font-size: 14px;
+        color: $text;
+    }
+}
