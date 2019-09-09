@@ -49,10 +49,10 @@
                 &:last-child{
                     border:none;
                 }
-                
+
             }
         }
-        
+
     }
 }
 
@@ -76,11 +76,11 @@
         z-index: 1000;
     }
 
-    
+
     .nav{
         &-wrap{
             display: flex;
-            
+
             padding: 0;
 
 
@@ -117,7 +117,13 @@
             line-height: 30px;
             &:hover{
                 border: 1px solid $white;
+                color: $color-btn;
                 background-color: $color-btn;
+
+                i{
+                    color: $white;
+                    background-color: $color-btn;
+                }
             }
 
             i{
@@ -125,6 +131,7 @@
                 font-size: 14px;
                 &:hover{
                     color: $white;
+                    background-color: $color-btn;
                 }
             }
         }
@@ -214,7 +221,7 @@
         font-size: 59px;
         text-transform: uppercase;
         color: $black;
-        
+
     }
     &-up{
         font-family: $ff-bold;
@@ -286,12 +293,12 @@
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
@@ -334,28 +341,69 @@
             display: none;
         }
     }
-    
+
 }
 
 @media (max-width: 910px){
         .btn{
             margin-bottom: 40px;
         }
-    
-}
 
-@media (max-width: 725px){
         .call-block{
             display: block;
             text-align: center;
         }
-    
+
 }
 
-@media (max-width: 480px){
+@media (max-width: 575px){
+        .user-menu{
+            padding: 0;
+            margin: 0;
+        }
         .user-wrap{
             padding-left: 10px;
             padding-right: 10px;
+            width: 100%;
         }
-    
+        .header-top .user-wrap .user-menu__link{
+            padding: 2% 5%;
+            text-align: center;
+        }
+
+}
+
+@media (max-width: 320px){
+    .user-menu{
+        padding: 0;
+        margin: 0;
+    }
+        .user-wrap{
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 100%;
+        }
+        .header-bottom{
+            padding-top: 15px;
+
+            .nav{
+                width: 100%;
+            }
+            .social{
+                margin-bottom: 20px;
+            }
+            .nav-wrap__link{
+                margin-right: 0;
+                margin-left: 5%;
+            }
+        }
+
+        .header-top .user-wrap .user-menu__link{
+            padding: 0;
+            padding-left: 10px;
+        }
+        .btn{
+            margin: 0 auto;
+        }
+
 }

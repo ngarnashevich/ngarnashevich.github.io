@@ -1,0 +1,252 @@
+@media (max-width: 898px) {
+    .header{
+        .header-logo{
+            position: absolute;
+            top: 0;
+            left: 35%;
+        }
+        .header-phone{
+            position: absolute;
+                top: 0;
+                right: 5%;
+        }
+        .promo{
+            .promo-title{
+                font-size: 73px;
+            }
+            .promo-about{
+                font-size: 44px;
+            }
+        }
+    }
+    .property{
+        .round{
+            top: 52%;
+            left: 46%;
+        }
+
+    }
+    .reviews{
+
+        .user{
+            max-width: 672px;
+
+            .user-photo {
+                top: 50px;
+                left: 2px;
+            }
+        }
+        .next,
+        .prev {
+            top: 55%;
+        }
+
+    }
+    .feedback{
+        .feedback-title{
+            font-size: 32px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+        .header{
+            .header-logo{
+                position: absolute;
+                top: 0;
+                left: 35%;
+            }
+        }
+
+        .relocation{
+            h2{
+                 font-size: 32px;
+            }
+        }
+        .property{
+            .property-title{
+                font-size: 32px;
+            }
+
+            .round{
+                top: 56%;
+            }
+        }
+
+        .reviews{
+
+            .user{
+                max-width: 672px;
+
+                .user-photo {
+                    top: 50px;
+                    left: 2px;
+                }
+            }
+            .next,
+            .prev {
+                display: none;
+            }
+
+        }
+        .footer{
+            .footer-wrapper{
+                padding: 25px 0;
+            }
+            .footer-copyright {
+                margin-top: 40px;
+            }
+        }
+}
+
+@media (max-width: 575px) {
+    .header{
+        .promo{
+            .promo-title{
+                font-size: 55px;
+            }
+            .promo-about{
+                font-size: 32px;
+            }
+        }
+    }
+
+    .relocation{
+            h2{
+                 font-size: 28px;
+            }
+    }
+
+    .property{
+            .property-title{
+                font-size: 28px;
+            }
+            .round{
+                top: 56%;
+            }
+    }
+    .reviews{
+
+        .user{
+            max-width: 672px;
+
+            .user-photo {
+                top: 50px;
+                left: 2px;
+            }
+        }
+        .next,
+        .prev {
+            display: none;
+        }
+
+    }
+}
+
+@media (max-width: 420px) {
+    .header{
+        .promo{
+            .promo-title{
+                font-size: 38px;
+            }
+            .promo-about{
+                font-size: 28px;
+            }
+        }
+    }
+
+    .advantages{
+        .advantages-title{
+            font-size: 26px;
+        }
+    }
+
+    .relocation{
+            h2{
+                font-size: 21px;
+            }
+            p{
+                font-size: 17px;
+                line-height: 38px;
+            }
+
+            .relocation-how p{
+                line-height: 38px;
+            }
+
+            .relocation-how .arrow-top,
+            .arrow-down{
+                left: 43%;
+            }
+        }
+        .property{
+            .property-title{
+                font-size: 21px;
+                margin-bottom: 100px;
+            }
+            .property-images{
+                display: none;
+            }
+            .property-up{
+                margin: 0;
+            }
+            .property-down{
+                margin: 0;
+            }
+            .round{
+                top: 55%;
+                left: 43%;
+            }
+        }
+
+        .feedback{
+            overflow: hidden;
+            input{
+                width: 100%;
+            }
+            .form-name{
+                width: 100%;
+            }
+            .form-btn{
+                width: 100%;
+            }
+        }
+
+        .footer{
+            .footer-wrapper{
+                padding: 25px 0;
+            }
+            .footer .footer-copyright {
+                margin-top: 34px;
+            }
+            .footer-security {
+                margin-top: 26px;
+            }
+            .footer-phone {
+                margin-top: 22px;
+            }
+        }
+
+}
+
+
+@media (max-width: 320px) {
+    .property .round {
+        top: 60%;
+        left: 43%;
+    }
+    .footer{
+            .footer-wrapper{
+                padding: 25px 0;
+            }
+            .footer-copyright {
+                margin-top: 27px;
+            }
+            .footer-security {
+                margin-top: 26px;
+            }
+            .footer-phone {
+                margin-top: 22px;
+            }
+    }
+}

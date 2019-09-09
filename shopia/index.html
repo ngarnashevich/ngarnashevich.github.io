@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,7 @@
             <!-- begin header-bottom -->
             <div class="container">
             <div class="header-bottom">
-                
+
                 <nav class="nav">
                     <ul class="nav-wrap">
                         <li class="nav-wrap__link"><a href="#">Home</a></li>
@@ -61,8 +61,8 @@
 
         <!-- begin slider -->
         <div class="slideshow-container">
-                
-                
+
+
                 <div class="mySlides fade">
                     <img src="img/slider1.png" style="width:100%">
                     <div class="slide-content">
@@ -77,7 +77,7 @@
                         <button class="btn">SHOP NOW</button>
                     </div>
                 </div>
-                
+
                 <div class="mySlides fade">
                     <img src="img/slider2.jpg" style="width:100%">
                     <div class="slide-content">
@@ -93,7 +93,7 @@
                         <button class="btn">SHOP NOW</button>
                     </div>
                 </div>
-                
+
                 <div class="mySlides fade">
                     <img src="img/slider3.jpg" style="width:100%">
                     <div class="slide-content">
@@ -139,9 +139,13 @@
     <!-- end main -->
 
     <!-- begin contact-map -->
-    <div class="contact-map">
+    <div class="contact-map" >
         <div class="container">
-            <div id="map"></div>
+            <div id="map" >
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5081.087387903783!2d30.523801305661944!3d50.44959953683894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce50ffa1b91f%3A0x42d5962fe7e791c!2z0JzQsNC50LTQsNC9INCd0LXQt9Cw0LvQtdC20L3QvtGB0YLRlg!5e0!3m2!1suk!2sua!4v1568045598449!5m2!1suk!2sua"
+                    width="100%" height="350px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
         </div>
     </div>
     <!-- end contact-map -->
@@ -155,49 +159,6 @@
     <!-- end footer -->
 
 
-<!-- <iframe src="https://yandex.ua/map-widget/v1/-/CBehZHShDB" width="1290" height="700" frameborder="0"></iframe> -->
 <script src="js/common.js"></script>
-<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-<script type="text/javascript">
-    ymaps.ready(init);
-
-    function init() {
-        var myMap = new ymaps.Map("map", {
-            // Центр карты, указываем коордианты
-            center: [55.74951156899046, 37.53708349999991],
-            // Масштаб, тут все просто
-            zoom: 16,
-            // Отключаем все элементы управления
-            controls: []
-        });
-
-        var myGeoObjects = [];
-
-        // Наша метка, указываем коордианты
-        myGeoObjects = new ymaps.Placemark([55.74951156899046, 37.53708349999991], {
-            balloonContentBody: 'Пресненская набережная 12',
-        }, {
-                iconLayout: 'default#image',
-                // Путь до нашей картинки
-                iconImageHref: 'img/map.png',
-                // Размер по ширине и высоте
-                iconImageSize: [70, 103],
-                // Смещение левого верхнего угла иконки относительно
-                // её «ножки» (точки привязки).
-                iconImageOffset: [-4, -125]
-            });
-
-        var clusterer = new ymaps.Clusterer({
-            clusterDisableClickZoom: false,
-            clusterOpenBalloonOnClick: false,
-        });
-
-        clusterer.add(myGeoObjects);
-        myMap.geoObjects.add(clusterer);
-        // Отлючаем возможность изменения масштаба
-        myMap.behaviors.disable('scrollZoom');
-
-    }
-</script>
 </body>
 </html>

@@ -1,3 +1,12 @@
+(function () {
+	var burger = document.querySelector(".burger-container"),
+		header = document.querySelector(".menu-wrap");
+
+	burger.onclick = function () {
+		header.classList.toggle("menu-opened");
+	};
+})();
+
 var slideIndex=1;
 showSlides(slideIndex);
 
