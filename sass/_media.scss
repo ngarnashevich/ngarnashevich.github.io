@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+   .portfolio__item {
+        max-width: calc(48% - 12px);
+    }
+}
+
+@media (max-width: 575px) {
+    .portfolio-list{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .portfolio__item {
+         max-width: calc(100% - 12px);
+        
+    }
+}

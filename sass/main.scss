@@ -1,0 +1,158 @@
+@import "helpers/all";
+@import "fontello";
+
+
+/* ---------- MAIN STYLE------------*/
+
+#app{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 60px;
+    color: #515151;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    text-align: center;
+
+    &__link{
+        text-align: center;
+        width: 48px;
+        height: 48px;
+        float: left;
+        background: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+        border-radius: 24px;
+        margin: 0 10px 10px 0;
+        padding: 6px;
+        color: #000;
+
+        i{
+            font-size: 21px;
+            color: #000;
+        }
+        &:hover{
+            background-color: #000;
+            
+            i{
+                color: #fff;
+            }
+        }
+    }
+}
+
+.portfolio-list {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.portfolio__item {
+    max-width: calc(33.333333% - 12px);
+}
+
+
+.portfolio__wrap {
+    position: relative;
+    background-color: rgb(149, 225, 211);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+}
+
+.portfolio__img {
+    display: block;
+    width: 100%;
+    transition: transform 0.2s linear 0s;
+}
+
+.portfolio__text {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1.7;
+    text-transform: uppercase;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 2;
+    opacity: 0;
+}
+
+.portfolio__title {
+    margin-bottom: 40px;
+}
+
+.portfolio__content:hover .portfolio__img {
+    opacity: 0.1;
+}
+
+.portfolio__content:hover .portfolio__text {
+    opacity: 1;
+}
+
+.portfolio__content:hover .description {
+    opacity: 1;
+}
+
+.portfolio__content:hover {
+    transform: translate(-10px, -10px);
+    background: linear-gradient(rgb(243, 129, 129), rgb(252, 227, 138));
+}
+
+.portfolio__content {
+    transition: transform 0.2s linear 0s;
+}
+
+.portfolio__img {
+    margin-bottom: 10px;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.description_mojo {
+    width: 75%;
+}
+
+.description__text {
+    margin-bottom: 5px;
+}
+
+/* ---------- END STYLE------------*/
+
+/* ---------- MOBILE STYLE------------*/
+
+@import "media";
+
+/* ---------- END MOBILE STYLE------------*/
