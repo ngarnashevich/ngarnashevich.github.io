@@ -1,0 +1,60 @@
+/* Basic Page Settings */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	@include ff;
+	overflow-x: hidden;
+	color: #000000;
+	input, textarea {
+		border: #666 1px solid;
+		outline: none;
+		&:focus:required:invalid {
+			border-color: red;
+		}
+		&:required:valid {
+			border-color: green;
+		}
+	}
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	&.img-width {
+		width: 100%;
+	}
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+button,
+input,
+textarea,
+a {
+    &:focus {
+        outline: none;
+    }
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+.container{
+	@include min-max(320px, 1174px, 15px);
+}

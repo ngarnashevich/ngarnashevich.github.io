@@ -1,0 +1,53 @@
+.header{
+        background-color: #e4e4e4;
+.logo{
+    a{
+        color: #4e4e4e;
+        @include ff;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 65px;
+        text-transform: uppercase;
+        letter-spacing: -2px;
+    }
+}
+
+
+
+
+}
+
+.navigation-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 123px;
+
+}
+
+.navigation{
+    display: flex;
+
+
+    &__item{
+        margin-left: 22px;
+    }
+
+    &__link{
+        color: #4e4e4e;
+        @include ff;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 35px;
+        text-transform: uppercase;
+        color: #4e4e4e;
+
+        &:hover,
+        &:focus,
+        &:active
+        {
+            color: #1abb9c;
+        }
+    }
+
+}
