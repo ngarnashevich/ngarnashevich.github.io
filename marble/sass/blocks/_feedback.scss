@@ -9,7 +9,7 @@
     }
 
     &__text{
-        width: 734px;
+        max-width: 734px;
         color: #a1a1a1;
         @include ff;
         font-size: 20px;
