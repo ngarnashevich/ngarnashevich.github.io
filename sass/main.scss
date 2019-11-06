@@ -60,16 +60,10 @@
 }
 
 .portfolio-list {
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 12px;
 }
-
-.portfolio__item {
-    max-width: calc(33.333333% - 12px);
-}
-
 
 .portfolio__wrap {
     position: relative;

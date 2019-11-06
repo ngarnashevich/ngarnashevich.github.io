@@ -6,9 +6,7 @@
 
 @media (max-width: 575px) {
     .portfolio-list{
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        grid-template-columns: 1fr ;
     }
     .portfolio__item {
          max-width: calc(100% - 12px);
